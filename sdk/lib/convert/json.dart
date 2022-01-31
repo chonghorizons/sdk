@@ -72,7 +72,8 @@ const JsonCodec json = JsonCodec();
 /// object that must be directly encodable.
 ///
 /// If [toEncodable] is omitted, it defaults to a function that returns the
-/// result of calling `.toJson()` on the unencodable object.
+/// result of calling `.toJson()` on the unencodable object as a dynamic
+/// method call.
 ///
 /// Shorthand for `json.encode`. Useful if a local variable shadows the global
 /// [json] constant.
